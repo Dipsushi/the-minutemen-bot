@@ -86,8 +86,8 @@ If you have 19 or less victorious attacks within a seeason, you will be demoted 
     He was a pimped townhall 9 roaming the champion league fighting off the townhall 10s.
     One day, Cody was faced with a weak, pitful townhall 8 during a clan war.
     Without any hesitation, he unleashed his army upon the townhall 8. . . . but 
-    He somehow managed a 99% 2 stars. NOT 3 but a 2! And so the legend continues "Don't be like Cody! :)`);
-    .setImage("https://i.imgur.com/8iMymSH.jpg")
+    He somehow managed a 99% 2 stars. NOT 3 but a 2! And so the legend continues "Don't be like Cody! :)`)
+    .setImage("https://i.imgur.com/8iMymSH.jpg");
 
     message.channel.send(embed2);
   
