@@ -79,7 +79,8 @@ If you have 19 or less victorious attacks within a seeason, you will be demoted 
 /** Cody Code.
 */
  if(cmd === `${prefix}howtogetgood`){
-   return message.channel.send(`Don't be like cody~ :)`);
+   return message.channel.send("Don't be like cody~ :)", 
+   {files: ["https://drive.google.com/file/d/1U-q5ntnoKIMT8Nu1NX-D-luDpa9S4UJi/view?usp=drivesdk"]});
  }
 /** Greeting New members.
 */
