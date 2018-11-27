@@ -73,7 +73,7 @@ bot.on("message", async message => {
 /** Inactive information.
 */
   if(cmd === `${prefix}inactive`){
-    returrn message.channel.send(`Inactive Policy:
+    return message.channel.send(`Inactive Policy:
 If you have 19 or less victorious attacks within a seeason, you will be demoted and/or kicked!`); 
   }
 /** Cody Code.
