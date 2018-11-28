@@ -28,15 +28,15 @@ bot.on("message", async message => {
     \n Please keep the server Christian friendly and keep "it" in your pants! Happpy Clashing!
     \n \n Minutemen Informations: 
     \n \n -elder
-    \n -coleader
-    \n -leader
-    \n -inactive
+     -coleader
+     -leader
+     -inactive
     \n \n Minutemen Honorable Mentions:
     \n \n -firstpresident
-    \n -donationgod
-    \n -clangamesonic
-    \n -howtogetgood
-    \n -taxevasion`);
+     -donationgod
+     -clangamesonic
+     -howtogetgood
+     -taxevasion`);
 
     message.channel.send(embed);
   }
@@ -47,7 +47,7 @@ bot.on("message", async message => {
     .setTitle("Fastest Clan Game Grinder!")
     .setColor(0x1A45EE)
     .setDescription(`PHluffy have max the clan game points the fastest during our recent clan game!
-/n Can you steal PHluffy's position Or will PHluffy maintain the current position?`)
+ Can you steal PHluffy's position or will PHluffy maintain the current position?`)
     .setImage("https://memegenerator.net/img/instances/71878629/good-job.jpg");
     
     message.channel.send(embed);
@@ -71,8 +71,8 @@ bot.on("message", async message => {
     const embed = new RichEmbed()
     .setTitle("Jack the wet noodle")
     .setColor(0xF7F01D)
-    .setDescription(`There once was an uncivilized member named Jack aka. wet noodle
-\n that refused to pay his taxes donation while the other clan members were doing their part. 
+    .setDescription(`There once was an uncivilized member named Jack (aka. wet noodle)
+\n that refused to pay his taxes(donation) while the other clan members were doing their part. 
 \n The clan tried to persuade Jack to do his civil duties . . . 
 \n but in response Jack assembled a team starting the infamous Minutemen Civil War of 1861.`)
     .setImage("https://i.imgur.com/zeh6TI7.jpg");
