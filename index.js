@@ -61,7 +61,7 @@ bot.on("message", async message => {
     .setDescription(`George Washington founded the minutemen clan in 1789 under the secret identity, Prajwal Chandrashekar.
 \n Bravely fought and led the clan in the famous French and Indian war and American Revolutionary War.
 \n Although no longer with us, the clan continued to thrive and left a legacy that wil be forever remembered.`)
-    .setImage("https://i.imgur.com/QV9vctK.jpg);
+    .setImage("https://i.imgur.com/QV9vctK.jpg");
               
     message.channel.send(embed);
 }
