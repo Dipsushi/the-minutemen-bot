@@ -126,7 +126,6 @@ If you have 19 or less victorious attacks within a seeason, you will be demoted 
 /** Greeting New members.
 */
   bot.on(`guildMemberAdd`, member => {
-  guildMember.addRole(guildMember.guild.roles.find(role => role.name === "Member")
   const channel = member.guild.channels.find(ch => ch.name === 'welcome');
   const embed2 = new RichEmbed()
   .setTitle('Greetings~')
