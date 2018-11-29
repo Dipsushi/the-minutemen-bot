@@ -19,7 +19,7 @@ bot.on("message", async message => {
   let args = messageArray.slice(1);
 /** List of Commands
 */ 
-  if (message.content === `${prefix}help`){
+  if (message.content === `${prefix}help` && message.channel.name === "clan-information"){
     const embed = new RichEmbed()
     .setTitle('The Minutemen Help Desk')
     .setColor(0xFF0000)
@@ -39,10 +39,7 @@ bot.on("message", async message => {
      -taxevasion`);
 
     message.channel.send(embed);
-  }
-/** Clan Game Sonic
-*/
-  if(cmd === `${prefix}clangamesonic`){
+  } else if(cmd === `${prefix}clangamesonic` && message.channel.name === "clan-information"){  /* Clan Game Sonic */
     const embed = new RichEmbed()
     .setTitle("Fastest Clan Game Grinder!")
     .setColor(0x1A45EE)
@@ -51,10 +48,7 @@ bot.on("message", async message => {
     .setImage("https://memegenerator.net/img/instances/71878629/good-job.jpg");
     
     message.channel.send(embed);
-}
-/** The First President
-*/
-  if(cmd === `${prefix}firstpresident`) {
+} else if(cmd === `${prefix}firstpresident` && message.channel.name === "clan-information") { /* First President */
     const embed = new RichEmbed()
     .setTitle("George Washington")
     .setColor(0xF7911D)
@@ -64,10 +58,7 @@ bot.on("message", async message => {
     .setImage("https://i.imgur.com/QV9vctK.jpg");
               
     message.channel.send(embed);
-}
-/** Tax Evasion
-*/
-  if(cmd === `${prefix}taxevasion`) {
+} else if(cmd === `${prefix}taxevasion` && message.channel.name === "clan-information") { /* Tax Evasion */
     const embed = new RichEmbed()
     .setTitle("Jack the wet noodle")
     .setColor(0xF7F01D)
@@ -78,10 +69,7 @@ bot.on("message", async message => {
     .setImage("https://i.imgur.com/zeh6TI7.jpg");
 
     message.channel.send(embed);
-  } 
-/** Donation God
-*/
-  if(cmd == `${prefix}donationgod`) {
+  } else if(cmd == `${prefix}donationgod` && message.channel.name === "clan-information") { /* Donation God */
     const embed = new RichEmbed()
     .setTitle("Highest Donation Achieved!")
     .setColor(0x19BF3A)
@@ -90,20 +78,14 @@ bot.on("message", async message => {
     .setImage("https://i.imgur.com/ctOFNMA.jpg");
     
     message.channel.send(embed);
-}
-/** Elder information.
-*/ 
-  if(cmd === `${prefix}elder`) {
+} else if(cmd === `${prefix}elder` && message.channel.name === "clan-information") { /* Elder */
     return message.channel.send(`Elder Requirement:
     1. Be Active!
     2. Be Courteous!
     3. Donate 400 or more troops during a single season!
     4. Show proficiency in war attacks!
     5. Recieve an approval from the leaders!`);
-  }
-/** Coleader information
-*/
-  if(cmd === `${prefix}coleader`){
+  } else if(cmd === `${prefix}coleader` && message.channel.name === "clan-information"){ /* Coleader */
     return message.channel.send(`Co-Leader Requirement:
     1. Be Active!
     2. Be Courteous!
@@ -113,10 +95,7 @@ bot.on("message", async message => {
     6. Earn a total of 30 war stars from Clan League Wars.
     7. Show leadership skills and dedication to the clan.
     8. Recieve an approval from the leaders.`);
-  }
-/** Leader information
-*/
-  if(cmd === `${prefix}leader`){
+  } else if(cmd === `${prefix}leader` && message.channel.name === "clan-information"){ /* Leader */
     return message.channel.send(`Leader Requirement: 
     if( you == kim yoo suk) {
       System.out.println("You are leader!");
@@ -125,16 +104,10 @@ bot.on("message", async message => {
    }
     return start a rebellion;
    }`);
-  }
-/** Inactive information.
-*/
-  if(cmd === `${prefix}inactive`){
+  } else if(cmd === `${prefix}inactive` && message.channel.name === "clan-information"){ /* Inactive */
     return message.channel.send(`Inactive Policy:
 If you have 19 or less victorious attacks within a seeason, you will be demoted and/or kicked!`); 
-  }
-/** Cody the legend
-*/
- if(cmd === `${prefix}howtogetgood`){
+  } else if(cmd === `${prefix}howtogetgood` && message.channel.name === "clan-information"){ /* How to get good */
     const embed2 = new RichEmbed()
     .setTitle("Don't be like Cody! :)")
     .setColor(0xFF0000)
@@ -147,7 +120,10 @@ If you have 19 or less victorious attacks within a seeason, you will be demoted 
 
     message.channel.send(embed2);
   
+ } else {
+   return message.channel.send("Wrong Channel!");
  }
+}
 /** Greeting New members.
 */
   bot.on(`guildMemberAdd`, member => {
