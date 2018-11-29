@@ -122,9 +122,7 @@ If you have 19 or less victorious attacks within a seeason, you will be demoted 
   
  } else {
    return message.channel.send("Wrong Channel!");
-  }
- }
-}       
+  }   
 /** Greeting New members.
 */
   bot.on(`guildMemberAdd`, member => {
