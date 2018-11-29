@@ -18,7 +18,7 @@ bot.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 /** List of Commands
-*/
+*/ 
   if (message.content === `${prefix}help`){
     const embed = new RichEmbed()
     .setTitle('The Minutemen Help Desk')
@@ -156,9 +156,10 @@ If you have 19 or less victorious attacks within a seeason, you will be demoted 
   const embed2 = new RichEmbed()
   .setTitle('Greetings~')
   .setColor(0x00FF00)
-  .setDescription(`Welcome to the Minutemen Clan server! , ${member}, Type -help for more information.`);
+  .setDescription(`${member}, welcome to the Minutemen Clan server!
+\n For more information, head on over to #discussion channel and type "-help".`);
   if(!channel) return;
-  channel.send(embed2);
+  bot.channels.find("name", "welcome").send(embed2);
 });
 
 });
