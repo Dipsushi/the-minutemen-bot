@@ -17,6 +17,22 @@ bot.on("message", async message => {
   let messageArray = message.content.split(" ");
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
+ 
+  function getRandomInt(min, max) {
+ min = Math.ceil(min);
+ max = Math.floor(max);
+ return Math.floor(Math.random() * (max - min)) + min;
+ }
+ if(message.content === `${prefix}random`) {
+   var x = getRandomInt(0 , 20);
+   if(x < 5) {
+     return message.channel.send("You are cool");
+   } else if(x > 5 && x < 10){
+     return message.channel.send("You are trash");
+   } else {
+     return message.channel.send("You are golden trash");
+ }
+ }
 /** List of Commands
 */ 
   if (message.content === `${prefix}help` && message.channel.name === "clan-information"){
